@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #00ff91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    max-height: 80vh; /* Set maximum height to 80% of viewport height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#itemInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.justified-label {
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.list-section {
+    display: flex;                /* Flex container */
+    flex-direction: column;       /* Stack items vertically */
+    align-items: center;          /* Center the items horizontally */
+}
+
+.list-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 70px;                    /* Reset margin for ul */
+    width: 100%;                  /* Ensure the ul takes the full width of the parent */
+}
+
+.list-section ul li {
+    background-color: #efea52;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;                   /* Maintain a percentage width */
+    max-width: 350px;            /* Set a max-width to control size */
+}
+
+/* Styling for the remove button inside each list item */
+.list-section ul li button {
+    background-color: #FF6347;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect specifically for remove button */
+.list-section ul li button:hover {
+    background-color: #e04a32;
+}
+
+/* Additional customization for remove button: make it smaller or different */
+.list-section ul li button.remove-btn {
+    background-color: #DC3545; /* Different color for remove button */
+    padding: 6px; /* Adjust size */
+    font-size: 14px; /* Adjust font size */
+    border-radius: 6px; /* Adjust border-radius */
+    display: block;
+    margin-right: 0px;
+    width: 30%;
+}
+
+.list-section ul li button.remove-btn:hover {
+    background-color: #c82333; /* Hover color */
+}
